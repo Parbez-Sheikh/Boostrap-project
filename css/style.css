@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+li{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+
+/* common css  */
+
+/* main_menu start */
+
+#main_menu{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(75deg, #4f1bc5, #7b17c5) !important;
+    z-index: 99;
+}
+#main_menu ul li a{
+    padding: 0 10px;
+    font-size: 16px;
+    color: white;
+    }
+    #main_menu ul ul{
+        background-color: blue;
+    }
+    #main_menu ul ul li a{
+        color: white;
+    }
+
+/* main_menu end */
+
+/* banner part start  */
+#banner{
+
+    padding: 100px 0;
+    background: linear-gradient(75deg, #4f1bc5, #7b17c5) !important;
+    position: relative; 
+    z-index: 1;
+    margin-bottom: 30px;
+
+}
+ #banner::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 270px;
+    width: 100%;
+    background-image:url(../images/hero-bottom-shape-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+
+    
+
+} 
+
+#banner h2{
+color: white;
+font-size:45px ;
+font-weight: 600;
+   
+}
+
+#banner p{
+    color: white;
+    font-size:18px ;
+    font-weight: 600;
+    margin: 25px 0;
+    line-height: 30px;
+       
+    }
+
+    
+#banner .download{
+    padding: 10px 30px;
+    background-color: #bf00dc;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+   
+    }
+    #banner .download i{
+        margin-left: 10px;
+    }
+    #banner .video {
+        margin: 0 15px;
+        color: white;
+        font-size: 14px;
+    }
+
+    #banner .video i{
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        color: #7b17c5;
+        border-radius: 50%;
+        margin-right: 10px;
+        text-align: center;
+        line-height: 40px;
+      
+        }
+        #banner .item{
+            margin-top: 30px;
+            position: relative;
+            
+        }
+        #banner .item h3{
+        color: white;
+            
+        }
+        #banner .item h5{
+            color: white;
+                    
+        }
+
+        #banner .item i{
+            position: absolute;
+            top: 50%;
+            right: 25px;
+            transform: translatey(-50%);
+            color: white;
+        }
+
+
+        
+/* banner part end  */
+
+/* service part start  */
+
+#service{
+    padding: 80px 0;
+}
+
+#service .item{
+    background-color: #bf00dc;
+    padding: 30px;
+    
+}
+#service .item{
+    background-color: white;
+    padding: 30px;
+    box-shadow: -3px 1px 28px -2px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    
+}
+
+#service .item i{
+    color:#9629e6  ;
+    font-size: 38px;
+}
+#service .item h2{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+#service .item p{
+    color: #696969;
+    font-size: 15px;
+
+}
+
+/* service part end  */
+
+/* help part start  */
+#help{
+    padding: 50px 0;
+    background-image: url(../images/about-bg-shape.svg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#help h2{
+    width: 70%;
+    color: #1b2e4b;
+    font-weight: 600;
+    font-size: 40px;
+}
+#help p{
+    width: 75%;
+    color:#696969 ;
+    font-size: 14px;
+    line-height: 25px;
+    margin: 20px 0;
+    
+}
+
+#help ul li{
+    position: relative;
+    line-height: 35px;
+
+}
+#help ul li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: -30px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #7b17c5;
+
+}
+#help .item{
+  margin: 10px 0;
+  box-shadow: -3px 3px 30px -7px rgba(0,0,0,0.47);
+  border-radius: 10px;
+  padding: 10px 0;
+}
+#help .item h3{
+  text-align: center;
+color: #6730e3;
+font-weight: 600;
+}
+#help .item h5{
+    text-align: center;
+  color: #696969;
+  
+  }
+
+/* help part end  */
+/* share part start  */
+#sharie{
+    padding: 100px 0;
+}
+#sharie img{
+    width: 100%;
+}
+
+#sharie h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #1b2e4b;
+    margin-bottom: 20px;
+}
+
+
+#sharie p{
+    font-size: 15px;
+    color: #1b2e4b;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#sharie ul li{
+    font-size: 15px;
+    line-height: 30px;
+    /* list-style: disc; */
+    position: relative;
+}
+
+#sharie ul li::before{
+    content: '';
+    position:absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: -25px;
+    height: 10px;
+    width: 10px;
+    background-color: #4f1bc5;
+    border-radius: 50%;
+}
+#sharie .left{
+    padding: 10px 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #9629e6;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+
+#sharie .right{
+    padding: 10px 30px;
+    
+    margin-top: 20px;
+   border: 1px solid #9629e6;
+    color: #9629e6;
+    font-size: 14px;
+    border-radius: 10px;
+}
+
+#sharie .right:hover{
+    background-color:#9629e6 ;
+    color: white;
+}
+
+/* share part end  */
+
+/* download part start  */
+#download{
+    padding: 50px 0;
+    background-image: url(../images/cta-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+}
+
+#download::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color:#7b17c5; */
+    background: linear-gradient(75deg, #4f1bc5, #7b17c5) !important;
+    z-index: -1;
+    opacity: .66;
+}
+
+#download .title{
+    width: 70%;
+    margin: auto;
+}
+
+
+#download .title h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#download .title p{
+    color: white;
+    text-align: center;
+}
+
+#download .main{
+    width: 60%;
+    margin: 30px auto;
+}
+
+#download .main .item{
+    background-color: #4f1bc5;
+    color: white;
+    padding: 5px 30px;
+    border-radius: 40px;
+    position: relative;
+    cursor: pointer;
+    
+
+}
+
+#download .main .item i{
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 20px;
+     font-size: 25px;
+     
+}
+
+
+#download .main .item h5{
+   text-align: center;
+   font-size:14px;
+}
+#download .main .item h3{
+    text-align: center;
+    font-size:18px;
+ }
+ 
+/* download part end  */
+
+
+/* process part start  */
+#process{
+    padding: 50px 0;
+    
+}
+#process .title{
+    width: 55%;
+    margin: auto;
+}
+
+#process h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+#process p{
+    text-align: center;
+    margin: 20px 0;
+    color: #696969;
+}
+
+#process img{
+    width: 100%;
+}
+#process .item{
+    
+    position: relative;
+    margin-: 30px 0;
+
+    
+}
+#process .item_1{
+    
+    position: relative;
+    margin-top: 30px;
+    margin: 100px 0;
+    
+}
+
+#process .item i{
+    height: 120px;
+    width: 120px;
+    background-color:white;
+    color: #6730e3;
+    box-shadow: 0px 0px 22px -2px rgba(0,0,0,0.75);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    left: 0;  
+}
+#process .item_1 i{
+    height: 120px;
+    width: 120px;
+    background-color:white;
+    color: #6730e3;
+    box-shadow: 0px 0px 22px -2px rgba(0,0,0,0.75);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 120px;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    right: 0;  
+}
+
+#process .item h2{
+    font-size: 25px;
+    text-align: left;
+    margin-left: 150px;
+    
+}
+
+#process .item_1 h2{
+    font-size: 25px;
+    text-align: right;
+    margin-right: 150px;
+    
+}
+#process .item p{
+    text-align: left;
+    color: black;
+    margin-left: 150px;
+    font-size: 15px;
+   
+
+}
+
+#process .item_1 p{
+    text-align: right;
+    color: black;
+    margin-right: 150px;
+    font-size: 15px;
+   
+
+}
+
+
+/* process part end  */
+
